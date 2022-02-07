@@ -11,8 +11,11 @@ function render (datas) {
 
   const img = document.createElement('img')
   img.setAttribute('src', datas.sprites.other['official-artwork'].front_default)
-  img.addEventListener('mouseover', () => {
+  img.addEventListener('mousemove', () => {
     return img.setAttribute('src', datas.sprites.other['dream_world']['front_default'])
+  })
+  img.addEventListener('mouseout', () => {
+    return img.setAttribute('src', datas.sprites.other['official-artwork'].front_default)
   })
   img.classList.add('card--img')
   img.setAttribute('width', 256)
