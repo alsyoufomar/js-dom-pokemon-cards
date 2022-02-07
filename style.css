@@ -13,17 +13,29 @@ body {
   justify-content: center;
 
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+
+  background-color: whitesmoke;
 }
 
 img {
   max-width: 100%;
+  object-fit: cover;
+  width: 256px;
 }
 
 h1,
 h2,
 h3 {
   text-align: center;
+}
+
+h1 {
+  color: rgb(18, 13, 36);
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px;
+  letter-spacing: 0.5em;
+  font-size: 2.5rem;
 }
 
 .cards {
@@ -48,11 +60,16 @@ h3 {
   transition: all 300ms;
 
   list-style-type: none;
+  background-color: rgb(18, 13, 36);
+  padding: 0 1em;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(0.95);
+  box-shadow: inset rgb(255, 255, 255) 0px 5px 30px;
 }
 
 .card--text {

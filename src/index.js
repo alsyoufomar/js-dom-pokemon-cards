@@ -18,7 +18,7 @@ function render (datas) {
     return img.setAttribute('src', datas.sprites.other['official-artwork'].front_default)
   })
   img.classList.add('card--img')
-  img.setAttribute('width', 256)
+  // img.setAttribute('width', 256)
   li.append(img)
 
   const ul2 = document.createElement('ul')
